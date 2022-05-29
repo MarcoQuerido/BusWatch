@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FDFCFC"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:paddingTop="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:padding="20dp"
+            android:text="Atualizar Perfil"
+            android:textColor="@color/purple_700"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/purple_700"
+            android:textColorLink="@color/white"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/textViewFN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:hint="Novo nome"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/purple_700"
+            android:textColorLink="@color/white" />
+
+        <EditText
+            android:id="@+id/textViewLN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:hint="Novo Apelido"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/purple_700"
+            android:textColorLink="@color/white" />
+
+        <EditText
+            android:id="@+id/textViewUN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:hint="Novo nome de Utilizador"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/purple_700"
+            android:textColorLink="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="25dp"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/button_voltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginEnd="20sp"
+                android:text="Voltar Atrás"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/buttonUpdate"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="15sp"
+                android:text="Atualizar"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

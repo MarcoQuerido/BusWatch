@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <RelativeLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textViewRegistoTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+
+            android:gravity="center_horizontal"
+            android:text="Registo"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewRegistoTitle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="30dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <EditText
+                    android:id="@+id/textView_firstName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Nome"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/textView_lastName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Apelido"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/editText_EmailAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/textView_username2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Nome de Utilizador"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/textView_password2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/textView_password3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Confirmar Password"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="15dp">
+
+                    <Button
+                        android:id="@+id/button_voltar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginEnd="20sp"
+                        android:bottomLeftRadius="15dp"
+                        android:bottomRightRadius="15dp"
+                        android:text="Voltar Atrás"
+                        android:textAllCaps="false"
+                        android:topLeftRadius="15dp"
+                        android:topRightRadius="15dp" />
+
+                    <Button
+                        android:id="@+id/button_confirmar"
+                        android:layout_width="118dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginEnd="15sp"
+                        android:bottomLeftRadius="15dp"
+                        android:bottomRightRadius="15dp"
+                        android:text="Confirmar"
+                        android:textAllCaps="false"
+                        android:topLeftRadius="15dp"
+                        android:topRightRadius="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

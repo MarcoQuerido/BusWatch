@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center_horizontal"
+        android:text="BusWatch"
+        android:textSize="36sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonPartilharLoc"
+                android:layout_width="fill_parent"
+                android:layout_height="56dp"
+                android:layout_margin="18dp"
+                android:text="Partilhar Localização" />
+
+            <Button
+                android:id="@+id/buttonVerLoc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:text="Ver Localizações" />
+
+            <!--<Button
+                android:id="@+id/buttonAutocarros"
+                android:layout_width="fill_parent"
+                android:layout_height="56dp"
+                android:layout_margin="18dp"
+                android:text="Autocarros" />-->
+
+            <Button
+                android:id="@+id/buttonPerfil"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:text="Perfil" />
+
+            <Button
+                android:id="@+id/buttonLogout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:text="Logout" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

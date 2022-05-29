@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pt.ulp.easybus2_testes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EasyBus2_testes"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ActivityFavoritos"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".AutocarrosListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarPerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ActivityRegisto"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityVerLocations"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMapPartilha"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- API KEY -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAzi-4gHvqQIE_sExpbcazC3xOLFLA4Fs0" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

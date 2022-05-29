@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EasyBus2_testes</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_menu" />
+    <string name="title_activity_locations" />
+    <string name="fab_mapsText">Alerts</string>
+    <string name="instrucoes">
+        No mapa vão aparecer marcadores que marcam o trajeto do transporte que está a ver.
+        Se o transporte estiver parado, não aparecem marcadores novos.
+        Se verificar que passa muito tempo desde que apareceu o último marcador verifique o menu de partilhas e procure pelo alert da partilha que estava a ver.
+        Para verificar a distância e o tempo de chegada do transporte a um ponto de interesse, deslize o mapa até
+        onde quer marcar um ponto e pressione o mapa nesse ponto.
+    </string>
+</resources>
